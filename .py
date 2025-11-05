@@ -4,5 +4,5 @@ class pet:
         self.money= int(money)
         self.happiness=happiness
         self.hunger= int(hunger)
-
+        print (pet)
   
