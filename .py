@@ -3,11 +3,21 @@ class pet:
         self.name=name
         self.money= int(money)
         self.happiness=happiness
-        self.hunger=(hunger) 
+        self.hunger=int(hunger) 
+        self.inventory= []
         
-def buy(self, item):
-        self.inventory.append(item)
-        print(self.inventory)
-Driddy= pet("Driddy",175,"Sword")
-Driddy.buy({"title": "Pizza","health":2})     
+    def buy(self, item):
+          self.inventory.append(item)
+          print(self.inventory)
+Driddy= pet("Driddy",175,50,50)
+Driddy.buy({"title": "Pizza","hunger":10})    
 print (Driddy.__dict__)
+while True:
+        x= input("play with driddy")
+        if x.lower()== "yes":
+          Driddy.happiness+=10
+          print(f"driddy happy level", {Driddy.happiness})
+        if x.lower()== "no":
+          break
+        
+
