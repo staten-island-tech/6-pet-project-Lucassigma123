@@ -16,6 +16,8 @@ while True:
         x= input("play with driddy")
         if x.lower()== "yes":
           Driddy.happiness+=10
+        if Driddy.happiness>100:
+          Driddy.happiness=100
           print(f"driddy happy level", {Driddy.happiness})
         if x.lower()== "no":
           break
