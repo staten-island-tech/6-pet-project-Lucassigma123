@@ -13,13 +13,17 @@ Driddy= pet("Driddy",175,50,50)
 Driddy.buy({"title": "Pizza","hunger":10})    
 print (Driddy.__dict__)
 while True:
-        x= input("play with driddy")
+        x= input("play with driddy yes to play no to no play")
         if x.lower()== "yes":
           Driddy.happiness+=10
-        if Driddy.happiness>100:
+        if Driddy.happiness>=100:
           Driddy.happiness=100
-          print(f"driddy happy level", {Driddy.happiness})
+        print(f"driddy happy level", {Driddy.happiness})
         if x.lower()== "no":
           break
-        
-
+  
+while True:
+    y= input("feed driddy yes to feed no to starve")
+    if y.lower()=="yes":
+      Driddy.hunger+=10
+      Driddy.inventory
