@@ -21,9 +21,20 @@ while True:
         print(f"driddy happy level", {Driddy.happiness})
         if x.lower()== "no":
           break
-  
+
 while True:
     y= input("feed driddy yes to feed no to starve")
     if y.lower()=="yes":
       Driddy.hunger+=10
-      Driddy.inventory
+      print(Driddy.hunger)
+    if Driddy.hunger>=100:
+        Driddy.hunger=100
+    if y.lower()=="no":
+      Driddy.hunger-=100
+      print(Driddy.hunger)
+    if Driddy.hunger<=0:
+        print("Driddy is dead")
+        break
+  
+        
+      
