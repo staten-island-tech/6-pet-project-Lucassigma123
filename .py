@@ -26,7 +26,7 @@ while True:
     y= input("feed driddy yes to feed no to starve")
     if y.lower()=="yes":
       Driddy.hunger+=10
-      print(Driddy.hunger)
+    print(Driddy.hunger)
     if Driddy.hunger>=100:
         Driddy.hunger=100
     if y.lower()=="no":
