@@ -26,15 +26,25 @@ while True:
     y= input("feed driddy yes to feed no to starve")
     if y.lower()=="yes":
       Driddy.hunger+=10
-    print(Driddy.hunger)
+      
+   
     if Driddy.hunger>=100:
         Driddy.hunger=100
-    if y.lower()=="no":
-      Driddy.hunger-=100
-      print(Driddy.hunger)
-    if Driddy.hunger<=0:
-        print("Driddy is dead")
+        print("Driddy is full")
+        print("hunger",  Driddy.hunger)
         break
-  
+    print("hunger", Driddy.hunger)
+    
+    
+    if y.lower()=="no":
+        break
+import random        
+while True:
+    money=input("type beg to beg for money")
+    if money.lower=="beg":
+       amount(int)== random.randint(-100,100)
+       amount+=Driddy.money
+       print(Driddy.money)
         
+  
       
