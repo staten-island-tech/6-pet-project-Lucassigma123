@@ -41,9 +41,9 @@ while True:
 import random        
 while True:
     money=input("type beg to beg for money")
-    if money.lower=="beg":
-       amount(int)== random.randint(-100,100)
-       amount+=Driddy.money
+    if money.lower()=="beg":
+       amount= random.randint(-100,100)
+       Driddy.money+=amount
        print(Driddy.money)
         
   
