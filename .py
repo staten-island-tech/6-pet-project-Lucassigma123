@@ -52,9 +52,13 @@ while True:
     sleep=input("type sleep to let driddy rest for 1 hour")
     if sleep.lower()==("sleep"):
         Driddy.energy+=10
+    print ("Energy",Driddy.energy)
     if Driddy.energy>=100:
         Driddy.energy=100
+        print("driddy is energized")
         break
+        
+       
     
 
     
