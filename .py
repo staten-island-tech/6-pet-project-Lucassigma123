@@ -1,10 +1,11 @@
 class pet:
-    def __init__(self, name, money, happiness, hunger):
+    def __init__(self, name, money, happiness, hunger, energy):
         self.name=name
         self.money= int(money)
         self.happiness=happiness
         self.hunger=int(hunger) 
         self.inventory= []
+        self.energy=int(energy)
         
     def buy(self, item):
           self.inventory.append(item)
@@ -23,30 +24,27 @@ while True:
           break
 
 while True:
-    y= input("feed driddy yes to feed no to starve")
+    y= input("feed driddy yes to feed no to starve type continue to continue")
     if y.lower()=="yes":
       Driddy.hunger+=10
+    if y.lower()=="no":
+        print("The end Driddy ate you")
+        quit()
       
    
     if Driddy.hunger>=100:
         Driddy.hunger=100
         print("Driddy is full")
         print("hunger",  Driddy.hunger)
-        break
+        
     print("hunger", Driddy.hunger)
     
     
-    if y.lower()=="no":
+    if y.lower()=="continue":
         break
-import random        
-while True:
-    money=input("type beg to beg for money")
-    if money.lower()=="beg":
-       amount= random.randint(-100,100)
-       Driddy.money+=amount
-       print(Driddy.money)
-        
-  
+    
+
+    
       
       
            
