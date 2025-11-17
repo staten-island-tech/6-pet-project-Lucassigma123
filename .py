@@ -13,7 +13,9 @@ class pet:
 Driddy= pet("Driddy",175,50,50,50)
 Driddy.buy({"title": "Pizza","hunger":10})    
 print (Driddy.__dict__)
-while True:
+
+def play():
+    while True:
         x= input("play with driddy yes to play no to no play")
         if x.lower()== "yes": 
           Driddy.happiness+=10
@@ -27,39 +29,49 @@ while True:
         if Driddy.energy<=0:
          print("game over Driddy died of exhaustion")
          quit()
-
-while True:
-    y= input("feed driddy yes to feed no to starve type continue to continue")
-    if y.lower()=="yes":
-      Driddy.hunger+=10
-    if y.lower()=="no":
+def run():
+    while True:
+      y= input("feed driddy yes to feed no to starve type continue to continue")
+      if y.lower()=="yes":
+        Driddy.hunger+=10
+      if y.lower()=="no":
         print("The end Driddy ate you")
         quit()
       
    
-    if Driddy.hunger>=100:
+      if Driddy.hunger>=100:
         Driddy.hunger=100
         print("Driddy is full")
-        print("hunger",  Driddy.hunger)
-        
-    print("hunger", Driddy.hunger)
+      print("hunger", Driddy.hunger)
     
     
-    if y.lower()=="continue":
-        break
-
-while True:
-    sleep=input("type sleep to let driddy rest for 1 hour")
-    if sleep.lower()==("sleep"):
+      if y.lower()=="continue":
+         break
+def aaa():
+    while True:
+     sleep=input("type sleep to let driddy rest for 1 hour")
+     if sleep.lower()==("sleep"):
         Driddy.energy+=10
-    print ("Energy",Driddy.energy)
-    if Driddy.energy>=100:
+     print ("Energy",Driddy.energy)
+     if Driddy.energy>=100:
         Driddy.energy=100
         print("driddy is energized")
         break
         
        
     
+
+while True:
+ main=input("type x to play with driddy y to feed z to rest")
+ if main.lower()=="x":
+  play()
+ if main.lower()=="y":
+  run()
+ if main.lower()=="z":
+    aaa()
+  
+    
+
 
     
       
