@@ -49,7 +49,7 @@ def run():
          break
 def aaa():
     while True:
-     sleep=input("type sleep to let driddy rest for 1 hour")
+     sleep=input("type sleep to let driddy rest for 1 hour no to no rest")
      if sleep.lower()==("sleep"):
         Driddy.energy+=10
      print ("Energy",Driddy.energy)
@@ -57,18 +57,35 @@ def aaa():
         Driddy.energy=100
         print("driddy is energized")
         break
+     if sleep.lower()=="no":
+        break
+
+
+def sigma():    
+ while True:
+  workout=input("type workout to workout no to no workout")
+  if workout.lower()=="workout":
+     Driddy.energy-25
+  print(Driddy.energy)
+  if workout.lower()=="no":
+     break
+
+
+  
+   
+ 
         
        
     
 
 while True:
- main=input("type x to play with driddy y to feed z to rest")
- if main.lower()=="x":
-  play()
- if main.lower()=="y":
-  run()
- if main.lower()=="z":
-    aaa()
+  main=input("type x to play with driddy y to feed z to rest")
+  if main.lower()=="x":
+      play()
+  if main.lower()=="y":
+      run()
+  if main.lower()=="z":
+      aaa()
   
     
 
