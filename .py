@@ -86,14 +86,20 @@ def sigma():
     
 
 while True:
-  main=input("type x to play with driddy y to feed z to rest w to workout")
-  if main.lower()=="x":
+  main={
+         1:"play",
+         2:"feed",
+         3:"sleep",
+         4:"workout" }
+  print(main)
+  sigma==input("Choose option")
+  if main=="1":
       play()
-  if main.lower()=="y":
+  if main=="2":
       run()
-  if main.lower()=="z":
+  if main=="3":
       aaa()
-  if main.lower()=="w":
+  if main=="4":
      sigma()
 
 
