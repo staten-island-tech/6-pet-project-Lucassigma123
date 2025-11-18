@@ -67,7 +67,7 @@ def aaa():
         break
 
 
-def sigma():    
+def sigma1():    
  while True:
   dead()
   workout=input("type workout to workout no to no workout")
@@ -77,14 +77,6 @@ def sigma():
   if workout.lower()=="no":
      break
 
-
-  
-   
- 
-        
-       
-    
-
 while True:
   main={
          1:"play",
@@ -92,18 +84,17 @@ while True:
          3:"sleep",
          4:"workout" }
   print(main)
-  sigma==input("Choose option")
-  if main=="1":
+  sigma = input("Choose option")
+  if sigma=="1":
       play()
-  if main=="2":
+  elif sigma=="2":
       run()
-  if main=="3":
+  elif sigma=="3":
       aaa()
-  if main=="4":
-     sigma()
+  elif sigma=="4":
+      sigma1()
 
 
     
       
       
-           
