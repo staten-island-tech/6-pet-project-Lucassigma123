@@ -58,13 +58,13 @@ def aaa():
     while True:
      dead()
      sleep=input("1: sleep 2: leave")
-     if sleep==("1"):
+     if sleep==("1"):                                       
         Driddy.energy+=10
         Driddy.money+=10
      print ("Energy",Driddy.energy)
      print("money",Driddy.money)
      if Driddy.energy>=100:
-       Driddy.energy=100
+       Driddy.energy=100                                    
        print("driddy is energized")
        break
      if sleep=="2":
@@ -82,14 +82,15 @@ def sigma1():
 
   print("energy",Driddy.energy)
   
-def shopping():
-   l=input(1:skittles )
+
 while True:
   main={
          1:"play",
          2:"feed",
          3:"sleep",
-         4:"workout" }
+         4:"workout",
+         5:"quit" 
+           }
   print(main)
   sigma = input("Choose option")
   if sigma=="1":
@@ -100,6 +101,8 @@ while True:
       aaa()
   elif sigma=="4":
       sigma1()
+  elif sigma=="5":
+     quit()
   else:
      print("INVALID OPTION READ")
 
