@@ -59,8 +59,8 @@ def run():
       print("hunger", Driddy.hunger)
       if y=="3":
           break 
-      if Driddy.money==0:
-         print("bankrupt")
+      if Driddy.money<=0:
+         print("bankrupt game over")
          quit()
    
       
@@ -110,8 +110,8 @@ def shop():
          print("loser")
       if shopa=="2":
          break
-      if Driddy.money==0:
-         print("bankrupt")
+      if Driddy.money<=0:
+         print("bankrupt game over")
          quit()
    
 
