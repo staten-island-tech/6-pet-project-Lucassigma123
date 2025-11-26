@@ -37,7 +37,7 @@ def play():
         print("Hunger",Driddy.hunger)
         if x.lower()== "2":
           break
-        if Driddy.hunger==0:
+        if Driddy.hunger<=0:
            print("Driddy has starved")
            quit()
         
@@ -92,7 +92,7 @@ def sigma1():
      Driddy.hunger-=25
   elif workout=="2":
      break
-  if Driddy.hunger==0:
+  if Driddy.hunger<=0:
      print("Driddy has starved to death")
      quit()
   print("energy",Driddy.energy)
@@ -115,7 +115,7 @@ def shop():
          quit()
    
 
-def stats():
+def brainrot():
  print (Driddy.__dict__)
  
          
@@ -147,7 +147,7 @@ while True:
   elif sigma =="6":
      shop()
   elif sigma=="7":
-     stats()
+     brainrot()
   else:
      print("INVALID OPTION READ")
 
