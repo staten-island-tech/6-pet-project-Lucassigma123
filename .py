@@ -11,13 +11,13 @@ class pet:
     def buy(self, item):
           self.inventory.append(item)
           print(self.inventory)
-Driddy= pet("Driddy",175,50,50,50)
+self=pet("Driddy",175,50,50,50)
 import random
 
-Driddy.buy({"title": "Pizza","hunger":10})    
-print (Driddy.__dict__)
+self.buy({"title": "Pizza","hunger":10})    
+print (self.__dict__)
 def dead():
-     if Driddy.energy<=0:
+     if self.energy<=0:
          print("game over Driddy died of exhaustion")
          quit()
 
@@ -27,17 +27,17 @@ def play():
         dead()
         x= input("1: play 2: no play")
         if x.lower()== "1": 
-          Driddy.happiness+=10
-          Driddy.energy-=10
-          Driddy.hunger-=25
-        if Driddy.happiness>=100:
-          Driddy.happiness=100
-        print(f"driddy happy level", {Driddy.happiness})
-        print(f"Energy", {Driddy.energy})
-        print("Hunger",Driddy.hunger)
+          self.happiness+=10
+          self.energy-=10
+          self.hunger-=25
+        if self.happiness>=100:
+          self.happiness=100
+        print(f"driddy happy level", {self.happiness})
+        print(f"Energy", {self.energy})
+        print("Hunger",self.hunger)
         if x.lower()== "2":
           break
-        if Driddy.hunger<=0:
+        if self.hunger<=0:
            print("Driddy has starved")
            quit()
         
@@ -46,20 +46,20 @@ def run():
       dead()
       y= input("1: feed 2: starve 3: continue")
       if y=="1":
-        Driddy.hunger+=10
-        Driddy.money-=10
-        print("money",Driddy.money)
+        self.hunger+=10
+        self.money-=10
+        print("money",self.money)
       if y=="2":
         print("The end Driddy ate you")
         quit()
-      if Driddy.hunger>=100:
-        Driddy.hunger=100
-        print("Driddy is full")
-        break
-      print("hunger", Driddy.hunger)
+      if self.hunger>=100:
+         self.hunger=100
+         print("Driddy is full")
+         break
+      print("hunger", self.hunger)
       if y=="3":
           break 
-      if Driddy.money<=0:
+      if self.money<=0:
          print("bankrupt game over")
          quit()
    
@@ -71,12 +71,12 @@ def aaa():
      dead()
      sleep=input("1: sleep 2: leave")
      if sleep==("1"):                                       
-        Driddy.energy+=10
-        Driddy.money+=10
-     print ("Energy",Driddy.energy)
-     print("money",Driddy.money)
-     if Driddy.energy>=100:
-       Driddy.energy=100                                    
+        self.energy+=10
+        self.money+=10
+     print ("Energy",self.energy)
+     print("money",self.money)
+     if self.energy>=100:
+       self.energy=100                                    
        print("driddy is energized")
        break
      if sleep=="2":
@@ -88,15 +88,15 @@ def sigma1():
   dead()
   workout=input("1: workout 2:leave")
   if workout=="1":
-     Driddy.energy-=25
-     Driddy.hunger-=25
+     self.energy-=25
+     self.hunger-=25
   elif workout=="2":
      break
-  if Driddy.hunger<=0:
+  if self.hunger<=0:
      print("Driddy has starved to death")
      quit()
-  print("energy",Driddy.energy)
-  print("hunger",Driddy.hunger)
+  print("energy",self.energy)
+  print("hunger",self.hunger)
 
 def shop():
    while True:
@@ -104,19 +104,19 @@ def shop():
       shopa=input("1: lottery ticket $10 2: leave ")
       if shopa=="1":
          print("$",xyz,"WINNER")
-         Driddy.money-=10
-         Driddy.money+=xyz
+         self.money-=10
+         self.money+=xyz
       if xyz==0:
          print("loser")
       if shopa=="2":
          break
-      if Driddy.money<=0:
+      if self.money<=0:
          print("bankrupt game over")
          quit()
    
 
 def brainrot():
- print (Driddy.__dict__)
+ print (self.__dict__)
  
          
      
